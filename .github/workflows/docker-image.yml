@@ -15,4 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file .devcontainer/ubuntu.Dockerfile --tag coachcrew-english-dict-bot:$(date +%s)
+      run: |
+        docker build . \
+          --build-arg DOCKER_ENTRYPOINT=.devcontainer/develop-entrypoint.sh \
+          --file .devcontainer/ubuntu.Dockerfile --tag coachcrew-english-dict-bot:$(date +%s)
