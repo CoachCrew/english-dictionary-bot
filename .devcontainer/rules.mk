@@ -13,7 +13,7 @@ USERNAME           ?= testuser
 USER_UID           ?= 1000
 USER_GID           ?= 1000
 
-IMAGE_NAME         ?= langenscheidt
+IMAGE_NAME         ?= coachcrew-english-dict-bot 
 CONTAINER_NAME     ?= $(IMAGE_NAME)-$(USERNAME)-$(shell date +"%Y-%m-%d.%H-%M")
 DOCKER_FILE        ?= $(CONTAINER_DIR)/ubuntu.Dockerfile
 DOCKER_ENTRYPOINT  ?= $(CONTAINER_DIR)/develop-entrypoint.sh
