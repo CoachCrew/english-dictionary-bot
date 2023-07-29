@@ -1,0 +1,5 @@
+static/langenscheidt/output
+.DS_Store
+Makefile.local
+.devcontainer/build-image
+.devcontainer/directories
