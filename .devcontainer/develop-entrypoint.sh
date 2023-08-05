@@ -15,6 +15,7 @@ chmod 0440 /etc/sudoers.d/${USERNAME}
 
 # setup proxy settings
 echo "source /opt/python/.venv/bin/activate" >> /home/${USERNAME}/.bashrc
+echo "PATH=\${PATH}:/opt/gcloud/google-cloud-sdk/bin/" >> /home/${USERNAME}/.bashrc
 
 # Change ownership and group of files in home and app directory of user
 chown -R ${USERNAME} /home/${USERNAME} 2>&1 > /dev/null
