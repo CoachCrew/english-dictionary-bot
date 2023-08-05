@@ -1,6 +1,6 @@
 # CoachCrew English Dictionary Bot
 
-The repository contains a Telegram. The bot uses [OpenAI api](openai.com) 
+The repository contains a Telegram. The bot uses [OpenAI api](https://openai.com) 
 to write english meaning of words given to the bot, with examples. 
 
 To use the bot, first create a bot using @Botfather, and set the following 
@@ -9,6 +9,7 @@ the programming using the following command.
 ```bash
 export TELEGRAM_TOEKN=xxx
 export OPENAI_API_KEY=xxx
+export GOOGLE_APPLICATION_CREDENTIALS=xxx
 python3 src/bot.py
 ```
 
